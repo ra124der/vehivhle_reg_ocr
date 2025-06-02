@@ -94,9 +94,13 @@ echo $env:POPLER_PATH
 5)Repo Contents
 
 main.py — Main program to run OCR on folders.
+
 doctr_module.py — Code using Doctr OCR.
+
 pytesseract_module.py — Code using Tesseract OCR.
+
 enb.py — Handles environment variable loading and validation.
+
 requirements.txt — Python dependencies list.
 
 6)Troubleshooting
