@@ -100,6 +100,7 @@ enb.py — Handles environment variable loading and validation.
 requirements.txt — Python dependencies list.
 
 6)Troubleshooting
+
 If you see warnings about invalid paths, verify you have installed Tesseract and Poppler correctly and set the environment variables properly.
 
 For Windows, be sure to open a new terminal window after setting environment variables or set them permanently via System Environment Variables in Windows Settings.
