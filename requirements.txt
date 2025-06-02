@@ -1,0 +1,4 @@
+pytesseract
+doctr
+pdf2image
+Pillow
