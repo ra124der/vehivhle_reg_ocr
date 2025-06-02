@@ -72,7 +72,8 @@ set POPLER_PATH=C:\poppler-24.08.0\Library\bin
 PowerShell:
 $env:POPLER_PATH = "C:\poppler-24.08.0\Library\bin"
 
-3)Running the Project:
+3)Running the Project
+
 Once dependencies and environment variables are set, run the main script:
 
 bash
@@ -81,6 +82,7 @@ python main.py --indir "path_to_root_input_folder"
 Replace "path_to_root_input_folder" with your folder containing subfolders of images/PDFs.
 
 4)Environment Variable Checks
+
 To verify environment variables:
 
 Windows CMD:
