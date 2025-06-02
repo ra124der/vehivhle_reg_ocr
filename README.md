@@ -31,7 +31,7 @@ Install required Python packages with:
 bash
 pip install -r requirements.txt
 
-External Dependencies:
+### 3. External dependencies
 1. Tesseract OCR
    
 Download and install Tesseract OCR suitable for your OS:
@@ -72,7 +72,7 @@ set POPLER_PATH=C:\poppler-24.08.0\Library\bin
 PowerShell:
 $env:POPLER_PATH = "C:\poppler-24.08.0\Library\bin"
 
-3)Running the Project
+### 4. Running the Project
 
 Once dependencies and environment variables are set, run the main script:
 
@@ -81,7 +81,7 @@ python main.py --indir "path_to_root_input_folder"
 
 Replace "path_to_root_input_folder" with your folder containing subfolders of images/PDFs.
 
-4)Environment Variable Checks
+### 5.Environmental Variable Checks
 
 To verify environment variables:
 
@@ -93,7 +93,7 @@ PowerShell:
 echo $env:TESSERACT_PATH
 echo $env:POPLER_PATH
 
-5)Repo Contents
+### 6.Repo Contents
 
 main.py — Main program to run OCR on folders.
 
