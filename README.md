@@ -30,7 +30,10 @@ Install required Python packages with:
 
 bash
 pip install -r requirements.txt
+
+External Dependencies:
 1. Tesseract OCR
+   
 Download and install Tesseract OCR suitable for your OS:
 
 Windows: Use the latest installer from UB Mannheim builds:https://github.com/UB-Mannheim/tesseract/wiki
