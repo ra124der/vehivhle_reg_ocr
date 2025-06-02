@@ -92,6 +92,7 @@ echo $env:TESSERACT_PATH
 echo $env:POPLER_PATH
 
 5)Repo Contents
+
 main.py — Main program to run OCR on folders.
 doctr_module.py — Code using Doctr OCR.
 pytesseract_module.py — Code using Tesseract OCR.
