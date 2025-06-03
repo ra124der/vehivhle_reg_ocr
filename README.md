@@ -24,12 +24,15 @@ This project extracts vehicle registration numbers from images and PDFs using OC
 Make sure Python is installed on your system. You can download it here:  
 [https://www.python.org/downloads/](https://www.python.org/downloads/)
 
+When Running installer,Click add python(put tick mark) to path during installing
+
 ### 2. Python dependencies
 
 Install required Python packages with:
 
 bash
-pip install -r requirements.txt
+pip install -r path_to_requirements.txt
+path_to reuirements.txt is place holder for path of requirements.txt
 
 ### 3. External dependencies
 1. Tesseract OCR
@@ -48,6 +51,7 @@ After installation, set the environment variable TESSERACT_PATH to the full path
 Example (Windows CMD):
 
 set TESSERACT_PATH=C:\Program Files\Tesseract-OCR\tesseract.exe
+This is normally where it is installed.just in case check whether this is the actual path of tesseract.exe
 PowerShell:
 
 $env:TESSERACT_PATH = "C:\Program Files\Tesseract-OCR\tesseract.exe"
@@ -65,6 +69,7 @@ Linux: Use your package manager: '''bash sudo apt-get install poppler-utils
 macOS:brew install poppler
 
 Extract (if applicable), then set the environment variable POPLER_PATH to the folder containing Poppler’s binaries (Library\bin on Windows).
+set path to folder in your machine where library\bin
 
 Example (Windows CMD):
 set POPLER_PATH=C:\poppler-24.08.0\Library\bin
