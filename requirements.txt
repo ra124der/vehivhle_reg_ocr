@@ -1,0 +1,9 @@
+numpy
+pillow
+pdf2image
+pytesseract
+opencv-python
+scikit-image
+matplotlib
+python-doctr[torch]
+
