@@ -1,0 +1,16 @@
+# OCR-related libraries
+pytesseract
+pdf2image
+Pillow
+
+# Doctr with Torch backend (for pretrained models)
+python-doctr[torch]
+
+# Required for Doctr's PDF/image handling
+PyMuPDF
+opencv-python
+matplotlib
+
+# Common numerical dependencies
+numpy
+scipy
