@@ -1,9 +1,6 @@
-numpy
 pillow
 pdf2image
 pytesseract
-opencv-python
 python-doctr[torch]
 torch
-torchvision
-torchaudio
+
