@@ -35,48 +35,31 @@ pip install -r path_to_requirements.txt
 path_to reuirements.txt is place holder for path of requirements.txt
 
 ### 3. External dependencies
-1. Tesseract OCR
-   
-Download and install Tesseract OCR suitable for your OS:
 
-Windows: Use the latest installer from UB Mannheim builds:https://github.com/UB-Mannheim/tesseract/wiki
-Download the latest installer suitable for your system (usually the topmost release).
+Windows:
 
-Linux: Install via package manager:sudo apt-get install tesseract-ocr.
+### 🔧 Setting Up Tesseract and Poppler on Windows
 
-macOS:Use Homebrew:brew install tesseract
+1. **Install Tesseract**:
+   - Download from: https://github.com/UB-Mannheim/tesseract/wiki
+   - Install to: `C:\Program Files\Tesseract-OCR`
 
-After installation, set the environment variable TESSERACT_PATH to the full path of the tesseract executable.
+2. **Install Poppler**:
+   - Download ZIP from: https://github.com/oschwartz10612/poppler-windows/releases
+3. **Add to PATH**:
+   - Open "Edit the system environment variables" → Environment Variables.
+   - Edit `Path` under *System variables* and add:
+     - C:\Program Files\Tesseract-OCR
+  After extracting the release 24.08.0 find bin folder ,copy the path and paste in system variables by editing path and adding.
+     - `C:\depends_on_machine\Release-24.08.0-0\poppler-24.08.0\Library\bin
 
-Example (Windows CMD):
 
-set TESSERACT_PATH=C:\Program Files\Tesseract-OCR\tesseract.exe
-This is normally where it is installed.just in case check whether this is the actual path of tesseract.exe
-PowerShell:
 
-$env:TESSERACT_PATH = "C:\Program Files\Tesseract-OCR\tesseract.exe"
-
-2. Poppler
-Required for converting PDF pages to images.
-
-Download Poppler for your OS:
-
-Windows: https://github.com/oschwartz10612/poppler-windows/releases
-Download the zip file (e.g., poppler-24.08.0.zip), extract it, and use the Library\bin folder as your POPLER_PATH.
-
-Linux: Use your package manager: '''bash sudo apt-get install poppler-utils
-
-macOS:brew install poppler
-
-Extract (if applicable), then set the environment variable POPLER_PATH to the folder containing Poppler’s binaries (Library\bin on Windows).
-set path to folder in your machine where library\bin
-
-Example (Windows CMD):
-set POPLER_PATH=C:\poppler-24.08.0\Library\bin
-
-PowerShell:
-$env:POPLER_PATH = "C:\poppler-24.08.0\Library\bin"
-
+4. **Verify**:
+   Open Command Prompt and run:
+   ```cmd
+   tesseract --version
+   pdftoppm -v
 ### 4. Running the Project
 
 Once dependencies and environment variables are set, run the main script:
