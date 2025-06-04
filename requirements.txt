@@ -6,4 +6,6 @@ opencv-python
 scikit-image
 matplotlib
 python-doctr[torch]
-
+torch
+torchvision
+torchaudio
