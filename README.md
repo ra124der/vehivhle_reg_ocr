@@ -22,7 +22,7 @@ This project extracts vehicle registration numbers from images and PDFs using OC
 ### 1. Python 3.7+
 
 Make sure Python is installed on your system. You can download it here:  
-[](https://www.python.org/downloads/release/python-3120/)
+[https://www.python.org/downloads/release/python-3120/](https://www.python.org/downloads/release/python-3120/)
 
 When Running installer,Click add python(put tick mark) to path during installing
 
