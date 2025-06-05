@@ -65,9 +65,10 @@ Windows:
 Once dependencies and environment variables are set, run the main script:
 
 bash
-python main.py --indir "path_to_root_input_folder"
+python path_to_main.py --indir "path_to_root_input_folder"
 
 Replace "path_to_root_input_folder" with your folder containing subfolders of images/PDFs.
+make sure cmd 
 
 ### 5.Environmental Variable Checks
 
