@@ -34,7 +34,7 @@ bash
 pip install -r path_to_requirements.txt
 path_to reuirements.txt is place holder for path of requirements.txt
 
-### 3. External dependencies
+### 3.Installation of External dependencies and Running of Program
 
 Windows:
 
@@ -52,16 +52,15 @@ Windows:
      - C:\Program Files\Tesseract-OCR
   After extracting the release 24.08.0 find bin folder ,copy the path and paste in system variables by editing path and adding.
      - `C:\depends_on_machine\Release-24.08.0-0\poppler-24.08.0\Library\bin
-
-
-
+    
+      
 4. **Verify**:
    Open Command Prompt and run:
    ```cmd
    tesseract --version
    pdftoppm -v
-### 4. Running the Project
 
+5. Run:
 Once dependencies and environment variables are set, run the main script:
 
 bash
@@ -70,7 +69,45 @@ python path_to_main.py --indir "path_to_root_input_folder"
 Replace "path_to_root_input_folder" with your folder containing subfolders of images/PDFs.
 make sure cmd 
 
-### 5.Environmental Variable Checks
+### macOS Instructions:
+1. Install Tesseract & Poppler via Homebrew
+bash
+Copy
+Edit
+brew install tesseract
+brew install poppler
+
+2. ✅ Verify Installation
+which tesseract      # Should output: /opt/homebrew/bin/tesseract
+which pdftoppm       # Should output: /opt/homebrew/bin/pdftoppm
+No need to edit environment variables manually if installed via Homebrew.
+
+3. 📦 Install Python Dependencies
+   
+4. pip3 install -r requirements.txt
+   
+5. ▶️ Run the Program 
+python3 path_to_main.py --indir path_to_root_folder
+
+### Linux Instructions (Ubuntu/Debian)
+
+1. 🔧 Install Tesseract & Poppler
+sudo apt update
+sudo apt install tesseract-ocr poppler-utils
+
+3. ✅ Verify PATH
+Check if these commands work:
+tesseract --version
+pdftoppm -h
+If not found, add their paths (usually /usr/bin) to .bashrc or .zshrc.
+
+4. 📦 Install Python Dependencies
+pip3 install -r requirements.txt
+
+5. ▶️ Run the Program
+python3 path_to_main.py --indir path_to_root_folder
+
+### 4.Environmental Variable Checks
 
 To verify environment variables:
 
@@ -82,7 +119,7 @@ PowerShell:
 echo $env:TESSERACT_PATH
 echo $env:POPLER_PATH
 
-### 6.Repo Contents
+### 5.Repo Contents
 
 main.py — Main program to run OCR on folders.
 
