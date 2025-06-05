@@ -77,34 +77,34 @@ Edit
 brew install tesseract
 brew install poppler
 
-2. ✅ Verify Installation
+2. Verify Installation
 which tesseract      # Should output: /opt/homebrew/bin/tesseract
 which pdftoppm       # Should output: /opt/homebrew/bin/pdftoppm
 No need to edit environment variables manually if installed via Homebrew.
 
-3. 📦 Install Python Dependencies
+3.  Install Python Dependencies
    
 4. pip3 install -r requirements.txt
    
-5. ▶️ Run the Program 
+5. Run the Program 
 python3 path_to_main.py --indir path_to_root_folder
 
 ### Linux Instructions (Ubuntu/Debian)
 
-1. 🔧 Install Tesseract & Poppler
+1. Install Tesseract & Poppler
 sudo apt update
 sudo apt install tesseract-ocr poppler-utils
 
-3. ✅ Verify PATH
+3. Verify PATH
 Check if these commands work:
 tesseract --version
 pdftoppm -h
 If not found, add their paths (usually /usr/bin) to .bashrc or .zshrc.
 
-4. 📦 Install Python Dependencies
+4. Install Python Dependencies
 pip3 install -r requirements.txt
 
-5. ▶️ Run the Program
+5.  Run the Program
 python3 path_to_main.py --indir path_to_root_folder
 
 ### 4.Environmental Variable Checks
